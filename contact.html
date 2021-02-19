@@ -15,7 +15,13 @@
       integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
       crossorigin="anonymous"
     />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="menu.css" />
   </head>
   <body>
     <header>
@@ -27,12 +33,29 @@
         <a href="services.html">Our Services</a>
         <a href="contact.html">Contact</a>
       </nav>
+      <div class="menu-wrap hidden">
+        <input type="checkbox" class="toggler" />
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Our Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
 
     <section id="hero">
       <div class="hero">
         <div class="hero-content">
-          <h1>Events managed the way <span class="underline">U</span> want</h1>
+          <h1>Weddings, Company Parties, Birthdays</h1>
+          <p class="text-center">Events managed the way you want</p>
           <br />
           <a href="contact.html">CONTACT US</a>
         </div>
@@ -45,7 +68,7 @@
         Contact <span class="underline">U</span>s
       </h2>
       <br />
-      <p class="text-center w80">
+      <p class="text-center w40">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni eaque
         quia neque impedit et id cumque maxime nemo quis in, illo quo natus
         tempore accusamus ut ratione ipsam pariatur totam iste distinctio a
@@ -58,14 +81,19 @@
       </p>
 
       <div class="contact-form">
-        <h3 class="text-center">
-          Or Fill in the fields below to get in touch with
-          <span class="underline">U</span>s
-        </h3>
-        <input type="text" id="name" placeholder="First and Last Name" />
-        <input type="text" id="email" placeholder="Email Address" />
-        <textarea placeholder="Add a message" id="message"></textarea>
-        <input type="submit" id="submit-btn" value="SUBMIT" />
+        <form id="form">
+          <h3>
+            Or Fill in the fields below to get in touch with
+            <span class="underline">U</span>s
+          </h3>
+          <input type="text" id="fname" placeholder="First Name" />
+          <input type="text" id="lname" placeholder="Last Name" />
+          <input type="text" id="email" placeholder="Email Address" />
+          <textarea placeholder="Add a message" id="message"></textarea>
+          <div id="error"></div>
+          <br />
+          <input type="submit" id="submit-btn" value="SUBMIT" />
+        </form>
       </div>
     </section>
 

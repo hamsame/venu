@@ -15,7 +15,13 @@
       integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
       crossorigin="anonymous"
     />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="menu.css" />
   </head>
   <body>
     <header>
@@ -27,12 +33,29 @@
         <a href="services.html">Our Services</a>
         <a href="contact.html">Contact</a>
       </nav>
+      <div class="menu-wrap hidden">
+        <input type="checkbox" class="toggler" />
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Our Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
 
     <section id="hero">
       <div class="hero">
         <div class="hero-content">
-          <h1>Events managed the way <span class="underline">U</span> want</h1>
+          <h1>Weddings, Company Parties, Birthdays</h1>
+          <p class="text-center">Events managed the way you want</p>
           <br />
           <a href="contact.html">CONTACT US</a>
         </div>
@@ -45,73 +68,64 @@
         <h2 class="text-center">O<span class="underline">u</span>r Services</h2>
         <br /><br /><br />
         <div class="service">
-          <span class="text-center">
-            <h4>Weddings</h4>
+          <span>
+            <h4 class="text-center">Weddings</h4>
             <br />
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est
-              beatae incidunt autem nemo cupiditate, nam, praesentium qui a
-              adipisci, veniam voluptatem. Maxime id quis libero sunt architecto
-              harum consectetur necessitatibus.
-            </p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quod
+            adipisci eligendi dignissimos quas corporis eaque vero officiis
+            nostrum obcaecati.
           </span>
+          &nbsp;
           <img src="cake.jpg" />
           <br />
         </div>
-        <hr />
+        <!-- <hr /> -->
         <br />
 
         <div class="service">
           <img src="art.jpg" alt="" />
-          <span class="text-center">
-            <h4>Workshops</h4>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          <span>
+            <h4 class="text-center">Workshops</h4>
             <br />
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem quo
-              harum labore ducimus molestias suscipit odit. Optio rerum natus
-              illo, autem aut id architecto ex mollitia sunt impedit fugiat
-              atque dignissimos iste unde, alias a molestiae tempore vel
-              quibusdam non!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quod
+              adipisci eligendi dignissimos quas corporis eaque vero officiis
+              nostrum obcaecati.
             </p>
           </span>
         </div>
-        <hr />
+        <!-- <hr /> -->
         <br />
 
         <div class="service">
-          <span class="text-center">
-            <h4>Business Events</h4>
+          <span>
+            <h4 class="text-center">Business Events</h4>
             <br />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Cupiditate eligendi doloribus eius laborum sed, fugit tempora
-              optio magnam voluptatum asperiores corrupti nulla accusamus ut
-              recusandae minima amet tenetur voluptate deserunt eos corporis
-              earum maiores ipsa assumenda velit! Quas nisi nobis vel! Quod
-              officiis ratione maxime ullam facere saepe eveniet fugit?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quod
+              adipisci eligendi dignissimos quas corporis eaque vero officiis
+              nostrum obcaecati.
             </p>
           </span>
           <img src="business-event.jpg" />
         </div>
-        <hr />
+        <!-- <hr /> -->
         <br />
 
         <div class="service">
           <img src="party.jpg" alt="" />
-          <span class="text-center">
-            <h4>Parties</h4>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          <span>
+            <h4 class="text-center">Parties</h4>
             <br />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-              facilis, optio praesentium, illum consequuntur nobis eligendi
-              deserunt iusto beatae sequi temporibus? Illum doloremque quos quas
-              deserunt blanditiis nemo, similique quia. Accusantium expedita
-              cupiditate at, libero est nostrum minima laudantium excepturi
-              sapiente nisi earum maxime accusamus.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat,
+              libero. Nisi facilis accusantium modi fugiat?
             </p>
           </span>
         </div>
-        <hr />
+        <!-- <hr /> -->
         <br />
 
         <div class="service">
@@ -119,12 +133,10 @@
             <h4>More</h4>
             <br />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-              facilis, optio praesentium, illum consequuntur nobis eligendi
-              deserunt iusto beatae sequi temporibus? Illum doloremque quos quas
-              deserunt blanditiis nemo, similique quia. Accusantium expedita
-              cupiditate at, libero est nostrum minima laudantium excepturi
-              sapiente nisi earum maxime accusamus.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+              ipsa neque, nulla nihil natus mollitia quisquam vitae ut corrupti
+              quos obcaecati accusamus totam molestias cupiditate atque quasi
+              nisi animi. Atque.
             </p>
           </span>
         </div>
